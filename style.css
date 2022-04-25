@@ -1,56 +1,9 @@
-p{
-  font-family: monospace;
-}
-h2{
-    color: red;
-    font-family: Lobster,monospace;
-
-
-  }
-.smaller-image{
-     width: 100px;
-   }
-.thick-green-border{
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-.silver-background{
-    background-color: silver;
-}
-
- .red-text {
-    color: red;
-  }
-
-  h2 {
-    font-family: Lobster, monospace;
-  }
-
-  p {
-    font-size: 16px;
-    font-family: monospace;
-  }
-
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
-  .smaller-image {
-    width: 100px;
-  }
-
-  .silver-background {
-    background-color: silver;
-  }
-  [type='checkbox'] {
-  margin: 10px 0px 15px 0px;
 body {
     background-color: black;
-    color:green;
-    font-family:monospace;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text
+  {
+    color:pink;
   }
