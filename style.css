@@ -21,7 +21,7 @@ h2{
  # cat-photo-form {
   background-color: green;
   }
-.injected-text {
+  .injected-text {
     margin-bottom: -25px;
     text-align: center;
   }
@@ -42,10 +42,12 @@ h2{
     background-color: crimson;
     color: #fff;
     padding: 20px;
+    margin: 20px;
   }
 
   .blue-box {
     background-color: blue;
     color: #fff;
     padding: 20px;
+    margin: 20px;
   }
