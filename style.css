@@ -20,7 +20,7 @@ h2{
     background-color: silver;
 }
 
-  .injected-text {
+ .injected-text {
     margin-bottom: -25px;
     text-align: center;
   }
@@ -40,11 +40,11 @@ h2{
   .red-box {
     background-color: crimson;
     color: #fff;
-    padding: 20px 40px 20px 40px;
+    margin: 20px 40px 20px 40px;
   }
 
   .blue-box {
     background-color: blue;
     color: #fff;
-    padding: 40px 20px 20px 40px
+    margin: 40px 20px 20px 40px;
   }
