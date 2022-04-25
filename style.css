@@ -50,5 +50,7 @@ h2{
   [type='checkbox'] {
   margin: 10px 0px 15px 0px;
 body {
-  background-color: black;
-}
+    background-color: black;
+    color:green;
+    font-family:monospace;
+  }
