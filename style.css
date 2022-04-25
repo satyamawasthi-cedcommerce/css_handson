@@ -1,16 +1,7 @@
 :root {
-    --red-color: red;
-  }
-  .red-box {
-    background:red;
-    background: var(--red-color);
-    height: 200px;
-    width:200px;
-  }:root {
-    /* Only change code below this line */
-
-    /* Only change code above this line */
-    --penguin-belly:pink;
+    --penguin-skin: gray;
+    --penguin-belly: pink;
+    --penguin-beak: orange;
   }
 
   body {
@@ -18,20 +9,22 @@
   }
 
   .penguin {
-    --penguin-skin: gray;
-    --penguin-beak: orange;
+    /* Only change code below this line */
+
+    /* Only change code above this line */
     position: relative;
     margin: auto;
     display: block;
     margin-top: 5%;
     width: 300px;
     height: 300px;
+    --penguin-belly:white;
   }
 
   .right-cheek {
     top: 15%;
     left: 35%;
-    background: var(--penguin-belly, white);
+    background: var(--penguin-belly, pink);
     width: 60%;
     height: 70%;
     border-radius: 70% 70% 60% 60%;
@@ -40,7 +33,7 @@
   .left-cheek {
     top: 15%;
     left: 5%;
-    background: var(--penguin-belly, white);
+    background: var(--penguin-belly, pink);
     width: 60%;
     height: 70%;
     border-radius: 70% 70% 60% 60%;
@@ -49,7 +42,7 @@
   .belly {
     top: 60%;
     left: 2.5%;
-    background: var(--penguin-belly, white);
+    background: var(--penguin-belly, pink);
     width: 95%;
     height: 100%;
     border-radius: 120% 120% 100% 100%;
@@ -183,3 +176,4 @@
   .penguin * {
     position: absolute;
   }
+
