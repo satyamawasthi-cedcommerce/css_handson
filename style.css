@@ -20,31 +20,33 @@ h2{
     background-color: silver;
 }
 
- .injected-text {
-    margin-bottom: -25px;
-    text-align: center;
+ .red-text {
+    color: red;
   }
 
-  .box {
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
     border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
+    border-radius: 50%;
   }
 
-  .yellow-box {
-    background-color: yellow;
-    padding: 20px 40px 20px 40px;
+  .smaller-image {
+    width: 100px;
   }
 
-  .red-box {
-    background-color: crimson;
-    color: #fff;
-    margin: 20px 40px 20px 40px;
+  .silver-background {
+    background-color: silver;
   }
-
-  .blue-box {
-    background-color: blue;
-    color: #fff;
-    margin: 40px 20px 20px 40px;
-  }
+  [type='checkbox'] {
+  margin: 10px 0px 15px 0px;
+}
