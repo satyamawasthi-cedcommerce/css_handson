@@ -1,0 +1,98 @@
+.maindiv
+{
+  background:cyan;
+  width:100%;
+  height:800px;
+}
+.headerdiv
+{
+  background:#388087;
+  height:45px;
+  width:100%;
+}
+.h1
+{
+  padding-left:10px;
+}
+.navigationdiv
+{
+  background: #BADFE7;
+  height:30px;
+  width:100%;
+  border-radius:5px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #BADFE7;
+}
+
+li {
+  float: left;
+  border-right:1px solid white;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:#388087 ;
+  
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.leftbodydiv
+{
+
+  width:75%;
+  height:695px;
+  float:left;
+  background:#F6F6F2;
+  background-image: linear-gradient(to right ,#F6F6F2, #C2EDCE);
+}
+.h2
+{
+ color:blue;
+ padding:10px 10px 10px 10px;
+ margin:30px;
+}
+.p
+{
+ padding:10px 10px 0px 10px;
+ margin:30px;
+}
+.rightbodydiv
+{
+  background:#D1D0CE;
+  width:25%;
+  height:695px;
+  float:left;
+}
+.h3
+{
+ color:blue;
+ padding:10px 10px 10px 10px;
+ margin:30px;
+}
+.footer 
+{
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:40px;
+  background:#388087 ;
+  color: white;
+  text-align: right;
+  float: right;
+}
+
