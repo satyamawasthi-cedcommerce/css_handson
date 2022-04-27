@@ -1,0 +1,148 @@
+.outerDiv{
+width:100%;
+height:900px;
+}
+
+.containerDiv{
+width:100%;
+height:800px;
+;
+}
+.logoDiv{
+ width:86%;
+ height:70px;
+ background: white;
+ text-align: left;
+ float:left;
+ margin: 25px 7% 0px 7%;
+}
+
+.aboutusDiv {
+ width:90%;
+ height:210px;
+ float:left;
+ background:#dfc8d0;
+ margin: 20px 0px 0px 5%;
+ float: left;
+}
+h2{
+margin: 25px 0px 0px 2%;
+}
+#headpara{
+padding:0px 82% 0px 2%;
+}
+#button{
+margin:0px 0px 0px 2%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float:right;
+}
+li {
+  float: left;
+  padding: 10px;
+}
+.lowercontainerdiv{
+width:100%;
+height:300px;
+float:left;
+margin: 12px 0px 0px 5%;
+}
+
+.c1, .c2, .c3{
+margin: 12px 0px 0px 3.75%;
+width:25%;
+ height:400px;
+ float:left;
+ 
+}
+
+.bottomDiv{
+ width:90%;
+ height:80px;
+ float:left;
+ background:#dfc8d0;
+ margin: 8% 0px 0px 5%;
+ display:inline-block;
+}
+
+
+.form{
+margin: 18px 0px 0px 20%;
+font-size:36px;
+
+}
+
+input[type=text], select, textarea {
+  width: 40%;
+  height:40px;
+  margin: 20px 20px 5px 20px;
+  float:left;
+ 
+}
+input[type=submit], select, textarea {
+  width: 25%;
+  height:40px;
+  margin: 20px 0px 5px 5px;
+  float:left;
+  background:#697184;
+ 
+}
+.footerDiv{
+ width:90%;
+ height:70px;
+ background:white;
+ margin: 20px 0px 0px 5%;
+ float:left;
+
+}
+.left{
+text-align:left;
+width:40%;
+margin: 10px 0px 0px 0px;
+float:left;
+}
+
+
+
+
+.right{
+text-align:right;
+width:49%;
+float:right;
+}
+
+
+.divideA {
+ width:100%;
+ height:50%;
+ background:#dfc8d0;
+ float:left;
+
+}
+.divideB{
+ width:80%;
+ height:50%;
+ background:white;
+ text-align:center;
+ float:left;
+ margin: 0 10% 0 10%;
+}
+#hr{
+color:black;
+}
+.subdiv{
+width:45%;
+float:left;
+margin:margin: 5% 0px 0px 0%;
+text-align:right;
+}
+.btn
+{
+width:40%;
+float:left;
+
+}
