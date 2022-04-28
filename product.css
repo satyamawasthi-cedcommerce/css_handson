@@ -1,0 +1,53 @@
+.outerdiv
+{
+width:100%;
+height:625px;
+background:silver;
+
+}
+.containerdiv
+{
+width:50%;
+height:70%;
+margin:10% 0% 0% 25%;
+float:left;
+background:white;
+}
+.inputdiv
+{
+margin:2% 0 0 5%;
+ height:50%;
+ width:90%;
+ background:crimson;
+ float:left;
+}
+.outputdiv
+{
+width:84%;
+height:35%;
+float:left;
+margin:2% 0 0 8%;
+text-align:center;
+background:teal;
+}
+input[type="text"]
+{
+width:38%;
+padding:1.5%;
+margin:1.8% 10% 0 0;
+float:right;
+border:none;
+}
+#prodid,#prodnm,#prodp
+{
+width:75%;
+}
+
+
+#btn{
+margin:15% 0 0 22.5%;
+height:40%;
+width:98%;
+font-size:100%;
+}
+
