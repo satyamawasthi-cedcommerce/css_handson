@@ -12,23 +12,22 @@
                 <table>
                     <tr>
                         <td> <label  id="pid">Product Id</label></td>
-                        <td> <input type="text" id="prodid" name="prodid" placeholder="Enter ProductId"></td>
+                        <td> <input type="text" id="prodid"  placeholder="Enter ProductId"></td>
                     </tr>
                     <tr>
                         <td><label  id="pnm">Product Name</label></td>
-                        <td> <input type="text" id="prodnm" name="prodnm" placeholder="Product Name"></td>
+                        <td> <input type="text" id="prodnm"  placeholder="Product Name"></td>
                     </tr>
                     <tr>
                         <td><label   id="pp">Price</label></td>
-                        <td> <input type="text" id="prodp" name="price" placeholder="productprice"></td>
+                        <td> <input type="text" id="prodp"  placeholder="productprice"></td>
                     </tr>
                     <tr>
-                        <td><button id="btn" onclick="addProducts()">Add Product</button>
+                        <td><button id="btn" onclick="addProductsToCart()">Add Product</button>
                     <tr>
                 </table>
             </div>
            <div class="outputdiv">
-            <h2 id="out"></h2>
             <table >
                 <thead>
                 <tr>
@@ -36,9 +35,9 @@
                 <th>Product Name</th>
                 <th>Product Price</th>
                 </tr>
-                </thead>
+            </thead>
                 
-                <tbody id="myTable" >
+                <tbody id = "myTable" >
                    <tr>
                     <td></td>
                     <td></td>
