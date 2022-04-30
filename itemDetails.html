@@ -5,10 +5,10 @@
         <link rel="stylesheet" href="itemDetails.css">
         <script src="itemDetails.js"></script>
     </head>
-    <body onload="displayItemDetails()">
+
+    <body onload="productCredentials()">
         <div class="mainDiv">
             <div class="innerDiv">
-                
                 <table id="displayTable">
                     <thead>
                     <tr>
@@ -17,9 +17,9 @@
                     <th>Memory(GB)</th>
                     <th>Price(rs)</th>
                     </tr>
-                </thead>
+                    </thead>
                     
-                    <tbody id = "myTable" >
+                    <tbody id ="myTable1" >
                        <tr>
                         <td></td>
                         <td></td>
@@ -28,7 +28,73 @@
                        </tr>
                     </tbody>
                 </table>
+                <!--Drop down menu-->
+                <select name="-select field-" id="choice">
+                    <option>Company</option>
+                    <option>Model</option>
+                    <option>Memory</option>
+
+                    <option>Price</option>
+                  </select>
+                  <input type="text" id="in" name="input">
+
+<!--This is the button that on being clicked calls the function "searchForItem()"-->
+
+                  <button id="btn" onclick="searchForItem()">Search</button><br>
+                  
+                
+                   <table id="displayTable">
+                    <thead>
+                    <tr>
+                    <th>Company</th>
+                    <th>Model</th>
+                    <th>Memory(GB)</th>
+                    <th>Price(rs)</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody id = "myTable2" >
+                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       </tr>
+                    </tbody>
+                </table>
+                <!--task 3-->
+                <select name="-sort by-" id="choice">
+                    <option>Ascending</option>
+                    <option>decending</option>
+                  </select>
+                  <select name="-sort by-" id="choice" onchange="sortItem()">
+                    <option>Company</option>
+                    <option>Model</option>
+                    <option>Memory</option>
+                    <option>Price</option>
+                  </select>  
+                  <table id="displayTable">
+                    <thead>
+                    <tr>
+                    <th>Company</th>
+                    <th>Model</th>
+                    <th>Memory(GB)</th>
+                    <th>Price(rs)</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody id ="myTable3" >
+                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       </tr>
+                    </tbody>
+                </table>
+            
             </div>
         </div>
     </body>
 </html>
+
