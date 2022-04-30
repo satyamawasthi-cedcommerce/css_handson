@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="itemDetails.css">
         <script src="itemDetails.js"></script>
     </head>
-
+ 
     <body onload="productCredentials()">
         <div class="mainDiv">
             <div class="innerDiv">
@@ -63,11 +63,13 @@
                     </tbody>
                 </table>
                 <!--task 3-->
-                <select name="-sort by-" id="choice">
+                <select name="-sort by-" id="choiceSort">
+                    
                     <option>Ascending</option>
                     <option>decending</option>
                   </select>
-                  <select name="-sort by-" id="choice" onchange="sortItem()">
+                  <!--filterFunction() on getting callled-->
+                  <select name="-sort by-" id="choiceParam" onchange="filterFunction()">
                     <option>Company</option>
                     <option>Model</option>
                     <option>Memory</option>
