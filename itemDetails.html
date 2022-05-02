@@ -28,6 +28,7 @@
                        </tr>
                     </tbody>
                 </table>
+                <hr>
                 <!--Drop down menu-->
                 <select name="-select field-" id="choice">
                     <option>Company</option>
@@ -62,11 +63,12 @@
                        </tr>
                     </tbody>
                 </table>
+                <hr>
                 <!--task 3-->
                 <select name="-sort by-" id="choiceSort">
-                    
+
                     <option>Ascending</option>
-                    <option>decending</option>
+                    <option>Decending</option>
                   </select>
                   <!--filterFunction() on getting callled-->
                   <select name="-sort by-" id="choiceParam" onchange="filterFunction()">
@@ -94,9 +96,37 @@
                        </tr>
                     </tbody>
                 </table>
-            
+                <hr>
+                <label for="Company">Company:</label><br>
+                <input type="text" id="companyName" placeholder="Enter Company"><br>
+                <label for="Model">Model:</label><br>
+                <input type="text" id="phModel" placeholder="Enter Model"><br>
+                <label for="Memory">Memory:</label><br>
+                <input type="text" id="phMmemory" placeholder="Enter Memory"><br>
+                <label for="Price">Price:</label><br>
+                <input type="text" id="phPrice" placeholder="Enter Price"><br><br>
+                <button id="addProduct" onclick="addToList()">Add</button>
+                <table id="displayTable">
+                    <thead>
+                    <tr>
+                    <th>Company</th>
+                    <th>Model</th>
+                    <th>Memory(GB)</th>
+                    <th>Price(rs)</th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody id ="myTable4" >
+                       <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                       </tr>
+                    </tbody>
+                </table>
+              
             </div>
         </div>
     </body>
 </html>
-
