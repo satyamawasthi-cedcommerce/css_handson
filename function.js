@@ -2,3 +2,4 @@
 /*this is a 
   multiline
   comment*/
+  var myName;
