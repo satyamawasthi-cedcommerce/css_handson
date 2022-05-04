@@ -1,7 +1,20 @@
-function timesFive(num){
-    return num*5;
-  
+// Declare the myGlobal variable below this line
+let myGlobal = 10;
+
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+  oopsGlobal = 5;
+}
+
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
   }
-  const product = timesFive(5);
-  const product1 = timesFive(2);
-  const product0 = timesFive(0);
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
