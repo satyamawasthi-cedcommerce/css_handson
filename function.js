@@ -1,8 +1,16 @@
-var outerWear = "T-Shirt";
+// Setup
+let sum = 0;
 
-function myOutfit() {
-  var outerWear = "sweater";
-  return outerWear;
+function addThree() {
+  sum = sum + 3;
 }
 
-myOutfit();
+// Only change code below this line
+function addFive(){
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive(10);
