@@ -325,7 +325,8 @@ function filterFunction()
                     }
                 }
             }
- function addToList(){
+        /*task-4*/
+         function addToList(){
          var Table = document.getElementById("myTable4");
          Table.innerHTML="";
 
@@ -351,21 +352,110 @@ function filterFunction()
                         cell4.innerHTML=productDetails[i].Price;       
                 }
         }  
-        var amt = [];
-        amt[0]=0;
-        amt[1]=0;
-        amt[2]=0;
-        amt[3]=0;
-        amt[4]=0;
+/*task-5*/       
+//an array that will be used to store the quantity of the products!!       
+var quantity=[];
+quantity[0]=0;
+quantity[1]=0;
+quantity[2]=0;
+quantity[3]=0;
+quantity[4]=0;
 
-        var units=[];
-        units[0]=0;
-        units[1]=0;
-        units[2]=0;
-        units[3]=0;
-        units[4]=0;
+//amt array will store the amount of each phone (will take default as 0)
+var amt=[];
+amt[0]=0;
+amt[1]=0;
+amt[2]=0;
+amt[3]=0;
+amt[4]=0;
 
-        function generateBill()
-        {
+function displayQuantity(){
+
+        var model = document.getElementById("pickItem").value;  
+        
+        var units = document.getElementById("enterQuantity").value;
+
+        if(model== "Samsung Galaxy"){
                 
+                amt[0] = amt[0] + units*productDetails[0].Price;
+                quantity[0] = quantity[0] + Number(units);
+                      var row = myTable5.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                        cell1.innerHTML = model;
+                    var cell2 = row.insertCell(1);
+                        cell2.innerHTML = quantity[0];
+                    var cell3 = row.insertCell(2);
+                        cell3.innerHTML = amt[0];
+              }
+        if(model== "Nokia S730"){
+               
+                amt[1] = amt[1] + units*productDetails[1].Price;
+                quantity[1] = quantity[1] + Number(units);
+                      var row = myTable5.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                        cell1.innerHTML = model;
+                    var cell2 = row.insertCell(1);
+                        cell2.innerHTML = quantity[1];
+                    var cell3 = row.insertCell(2);
+                        cell3.innerHTML = amt[1];
+              }
+              if(model== "Xiaomi Note"){
+               
+                amt[2] = amt[2] + units*productDetails[2].Price;
+                quantity[2] = quantity[2] + Number(units);
+                      var row = myTable5.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                        cell1.innerHTML = model;
+                    var cell2 = row.insertCell(1);
+                        cell2.innerHTML = quantity[2];
+                    var cell3 = row.insertCell(2);
+                        cell3.innerHTML = amt[2];
+              }
+              if(model== "Motoroala G10"){
+               
+                amt[3] = amt[3] + units*productDetails[3].Price;
+                quantity[3] = quantity[3] + Number(units);
+                      var row = myTable5.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                        cell1.innerHTML = model;
+                    var cell2 = row.insertCell(1);
+                        cell2.innerHTML = quantity[3];
+                    var cell3 = row.insertCell(2);
+                        cell3.innerHTML = amt[3];
+              }
+              if(model== "Apple S12"){
+               
+                amt[4] = amt[4] + units*productDetails[4].Price;
+                quantity[4] = quantity[4] + Number(units);
+                      var row = myTable5.insertRow(0);
+                    var cell1 = row.insertCell(0);
+                        cell1.innerHTML = model;
+                    var cell2 = row.insertCell(1);
+                        cell2.innerHTML = quantity[4];
+                    var cell3 = row.insertCell(2);
+                        cell3.innerHTML = amt[4];
+              }
+              
+    
+    
         }
+        function generateInvoice(){
+                var total = 0;
+                var Table = document.getElementById("myTable6");
+                Table.innerHTML = "";
+                
+                for (let i = 0; i < amt.length; i++) {
+                    total+= amt[i];
+                }
+                  var row = myTable6.insertRow(0);
+                            var cell1= row.insertCell(0);
+                          cell1.innerHTML = total;          
+                            var cell2 = row.insertCell(0);
+                          cell2.innerHTML = "       ";
+                            var cell3 = row.insertCell(0);
+                          cell3.innerHTML = "Total";
+        }
+
+
+
+              

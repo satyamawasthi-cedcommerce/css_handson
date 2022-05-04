@@ -97,6 +97,7 @@
                     </tbody>
                 </table>
                 <hr>
+                <!--task-4-->
                 <label for="Company">Company:</label><br>
                 <input type="text" id="companyName" placeholder="Enter Company"><br>
                 <label for="Model">Model:</label><br>
@@ -125,7 +126,53 @@
                        </tr>
                     </tbody>
                 </table>
-              
+              <hr>
+             <!--task-5-->
+             <select id="pickItem">
+                <option>-Select Product-</option>
+                <option>Samsung Galaxy</option>
+                <option>Nokia S730</option>
+                <option>Xiaomi Note</option>
+                <option>Motoroala G10</option>
+                <option>Apple S12</option>
+            </select>
+                <input type="text" id="enterQuantity" placeholder="Enter Quantity">
+                <button onclick="displayQuantity()">Add</button>
+                <button onclick="generateInvoice()">Generate Bill</button>
+                <!--this table will display the product,it's Quantity and amount-->
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                       
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="myTable5">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                        
+                    <tbody id="myTable6">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                                
+                    </tr>
+
+                    </tbody>
+                </table>
+                <hr>
+                
             </div>
         </div>
     </body>
