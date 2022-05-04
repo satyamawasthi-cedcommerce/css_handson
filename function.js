@@ -1,6 +1,1 @@
-// Setup
-const myArray = [["John", 23], ["dog", 3]];
-myArray.shift();
-
-// Only change code below this line
-myArray.unshift(["Paul", 35]);
+const myList = [["CEDCOSS" , 1] , ["Cedcommerce" , 2] , ["Makewebbetter" , 3] , ["WPswings" , 4] , ["Magenative" , 5]];
