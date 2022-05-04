@@ -1,7 +1,6 @@
 // Setup
-let lastNameLength = 0;
+let firstLetterOfLastName = "";
 const lastName = "Lovelace";
 
 // Only change code below this line
-lastNameLength = lastName.length;
-//console.log(lastName.length);
+firstLetterOfLastName = lastName[0]; // Change this line
