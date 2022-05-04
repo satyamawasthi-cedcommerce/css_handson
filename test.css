@@ -44,3 +44,10 @@
     color:white;
     margin-left: 55%;
 }
+#tablehead{
+    background:black;
+    color:white;
+}
+table{
+    border: 1px solid grey;
+}
