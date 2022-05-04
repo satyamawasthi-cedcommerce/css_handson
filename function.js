@@ -1,11 +1,9 @@
-function trueOrFalse(wasThatTrue) {
-    // Only change code below this line
-  if(wasThatTrue){
-    return "Yes, that was true"; 
+// Setup
+function testStrict(val) {
+    if (val===7) { // Change this line
+      return "Equal";
+    }
+    return "Not Equal";
   }
-  return "No, that was false";
   
-  
-    // Only change code above this line
-  
-  }
+  testStrict(10);
