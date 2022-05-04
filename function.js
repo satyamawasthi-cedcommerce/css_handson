@@ -1,9 +1,7 @@
-// Setup
-let processed = 0;
-
-function processArg(num) {
-  return (num + 3) / 5;
-}
-
-// Only change code below this line
-processed = processArg(7);
+function welcomeToBooleans() {
+    // Only change code below this line
+  
+    return true; // Change this line
+  
+    // Only change code above this line
+  }
