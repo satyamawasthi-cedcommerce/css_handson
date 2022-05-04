@@ -1,2 +1,5 @@
+// Setup
+const myArray = [18, 64, 99];
+
 // Only change code below this line
-const myArray = [["xyz" , 32],34];
+myArray[0] = 45;
