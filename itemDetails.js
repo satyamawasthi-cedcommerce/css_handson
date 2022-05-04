@@ -455,7 +455,83 @@ function displayQuantity(){
                             var cell3 = row.insertCell(0);
                           cell3.innerHTML = "Total";
         }
-
+        //task-6
+        function presentProducts() {
+                var Table = document.getElementById("myTable7");
+                Table.innerHTML = "";
+       
+                for(var i=0;i<productDetails.length;i++){
+                   var row = myTable7.insertRow();
+               
+                   var cell1 = row.insertCell(0);
+                   cell1.innerHTML = productDetails[i].Company;
+                   var cell2 = row.insertCell(1);
+                   cell2.innerHTML = productDetails[i].Model;
+                   var cell3 = row.insertCell(2);
+                   cell3.innerHTML = productDetails[i].Memory;
+                   var cell4 = row.insertCell(3);
+                   cell4.innerHTML = productDetails[i].Price;
+                               var cell5 = row.insertCell(4);
+                                    
+       
+                               var f= document.createElement('input');
+                                     f.type = 'checkbox';
+                                            f.id = 'check'+i;
+                   f.value= 'delete';
+                   
+                   cell5.appendChild(f);
+                
+            
+               
+           }
+       
+           
+         }
+         function removeProduct(){
+                var Table = document.getElementById("myTable8");
+                Table.innerHTML = "";
+                const val = [];
+                for(var i=0,j=0;i<productDetails.length;i++){
+                 
+                    var chk=document.getElementById('check'+i);
+                    if(chk.checked==true){
+                      val[j]=productDetails[i];
+                      j++;
+                    }
+                    
+                    
+                }
+            
+                for(var i = 0; i < val.length; i++){
+                    for(var j = 0; j<productDetails.length;j++){
+                      if(val[i].Company == productDetails[j].Company){
+                        productDetails.splice(j,1);
+                        
+                      }
+                      else
+                        continue;
+            
+                    }
+            
+                    
+                }
+                
+                for(var i=0;i<productDetails.length;i++){
+                  var row = myTable8.insertRow();
+                  
+                      var cell1 = row.insertCell(0);
+                      cell1.innerHTML = productDetails[i].Company;
+                      var cell2 = row.insertCell(1);
+                      cell2.innerHTML = productDetails[i].Model;
+                      var cell3 = row.insertCell(2);
+                      cell3.innerHTML = productDetails[i].Memory;
+                      var cell4 = row.insertCell(3);
+                      cell4.innerHTML = productDetails[i].Price;
+                      
+                  
+              }
+              }            
+	
 
 
               
