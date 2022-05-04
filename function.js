@@ -1,1 +1,4 @@
-const myList = [["CEDCOSS" , 1] , ["Cedcommerce" , 2] , ["Makewebbetter" , 3] , ["WPswings" , 4] , ["Magenative" , 5]];
+function reusableFunction(){
+    console.log("Hi World")
+  } 
+  reusableFunction();
