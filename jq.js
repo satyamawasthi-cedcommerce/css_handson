@@ -13,3 +13,15 @@ if(cpwd != pwd){//this condition compares the value of pwd with cpwd
 }
 });
 });
+//Table row color Task-2
+$(document).ready(function(){
+    $('#even').click(function(){
+   
+     $('table tr:even').css('background-color','grey');
+    });
+    $('#odd').click(function(){
+        //console.log("odd");
+        $('table tr:odd').css('background-color','blue');
+       });
+
+});
