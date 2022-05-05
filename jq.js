@@ -13,15 +13,48 @@ if(cpwd != pwd){//this condition compares the value of pwd with cpwd
 }
 });
 });
+
+
+
+
 //Table row color Task-2
 $(document).ready(function(){
     $('#even').click(function(){
    
-     $('table tr:even').css('background-color','grey');
+     $('table tr:even').css('background-color','lightgrey');
     });
     $('#odd').click(function(){
         //console.log("odd");
         $('table tr:odd').css('background-color','blue');
        });
+
+});
+
+
+
+
+//Error popup Task-3
+$(document).ready(function(){
+    $('#flag').click(function(){
+        var first = $('#fn').val();
+        var last = $('#ln').val();
+        if(first == ''){
+            $('#fn').css('background-color','red');
+            alert('Enter First Name');
+            $("#fn").focus(function(){
+                $('#fn').css("background-color", "white");
+            });
+        }
+
+
+        if(last == ''){
+            $('#ln').css('background-color','red');
+            alert('Enter Last Name');
+            $("#ln").focus(function(){
+                $('#ln').css("background-color", "white");
+            });
+        }
+  
+    });
 
 });
