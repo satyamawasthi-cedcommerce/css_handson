@@ -58,3 +58,12 @@ $(document).ready(function(){
     });
 
 });
+
+
+
+//para popup Task-9
+$(document).ready(function(){
+    $('.para').click(function(){
+        alert('clicked me!!');
+    });
+});
