@@ -1,12 +1,9 @@
-// Only change code below this line
-function countdown(n){
-  if (n < 1) {
-    return [];
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+    return [startNum];
   } else {
-    const arr = countdown(n - 1);
-    arr.splice(0, 0, n);
-    return arr;
+    var numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
   }
-  
-}
-// Only change code above this line
+};
