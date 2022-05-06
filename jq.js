@@ -67,3 +67,14 @@ $(document).ready(function(){
         alert('clicked me!!');
     });
 });
+
+
+//task-6
+$(document).ready(function(){
+   $('#nxt').click(function(){
+       $('#img1').attr('src','https://png.pngtree.com/thumb_back/fh260/back_pic/03/59/01/1157a364cb85901.jpg');
+    });
+    $('#pre').click(function(){
+        $('#img1').attr('src','https://image.shutterstock.com/image-illustration/abstract-blue-red-smoke-steam-260nw-1468643051.jpg')
+     });
+});
