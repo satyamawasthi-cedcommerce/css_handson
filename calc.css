@@ -1,0 +1,44 @@
+.mainDiv{
+    width:100%;
+    height:800px;
+   }
+   
+   
+   .containerDiv{
+       height:60%;
+       width:45%;
+       margin: 10% 0 0 30%;
+       background:white;
+       float:left;
+   }
+   
+   #calc{
+       width:95%;
+       height:95%;
+       margin: 2.5% 0 0 2%;
+       text-align: center;
+   }
+   
+   
+   .btn{
+       width:80%;
+       height:95%;
+       margin: 2.5% 0 0 2%;
+       text-align: center;
+   }
+   
+   
+   .button:hover {
+       background-color: #4CAF50;
+       color: white;
+   }
+   
+   
+   
+   
+   
+   .display{
+       height:50%;
+       width:85%;
+   }
+   
