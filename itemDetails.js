@@ -1,10 +1,18 @@
 var productDetails=[];
 
-    productDetails[0]={Company:"Samsung",Model:"Galaxy",Memory:64,Price:15000};
-    productDetails[1]={Company:"Nokia",Model:"S730",Memory:128,Price:22000};
-    productDetails[2]={Company:"Xiaomi",Model:"Note",Memory:32,Price:12000};
-    productDetails[3]={Company:"Motorola",Model:"G10",Memory:32,Price:15000};
-    productDetails[4]={Company:"Apple",Model:"S12",Memory:64,Price:25000};
+    productDetails[0]={Company:"Samsung",Model:"Galaxy",Memory:64,Price:15000,Quantity:0};
+    productDetails[1]={Company:"Nokia",Model:"S730",Memory:128,Price:22000,Quantity:0};
+    productDetails[2]={Company:"Xiaomi",Model:"Note",Memory:32,Price:12000,Quantity:0};
+    productDetails[3]={Company:"Motorola",Model:"G10",Memory:32,Price:15000,Quantity:0};
+    productDetails[4]={Company:"Apple",Model:"S12",Memory:64,Price:25000,Quantity:0};
+
+    var productRating=[];
+
+    productRating[0]={Company:"Samsung",Model:"Galaxy",Memory:64,Price:15000,Rating:0};
+    productRating[1]={Company:"Nokia",Model:"S730",Memory:128,Price:22000,Rating:0};
+    productRating[2]={Company:"Xiaomi",Model:"Note",Memory:32,Price:12000,Rating:0};
+    productRating[3]={Company:"Motorola",Model:"G10",Memory:32,Price:15000,Rating:0};
+    productRating[4]={Company:"Apple",Model:"S12",Memory:64,Price:25000,Rating:0};
 /*task-1*/
 function productCredentials()
 {
@@ -47,7 +55,7 @@ function searchForItem()
     {
         if(productDetails[i].Company == flag1)
         {
-            var row=myTable2.insertRow();
+           var row=myTable2.insertRow();
             var cell1=row.insertCell(0);
                      cell1.innerHTML=productDetails[i].Company;
 
@@ -530,8 +538,185 @@ function displayQuantity(){
                       
                   
               }
-              }            
-	
+              } 
+  //task-7 adding quantity and generating bill
+        function addQuan(){
+        var Table = document.getElementById("myTable9");
+        Table.innerHTML = "";
+        var commodity = (document.getElementById("choseProduct").value);
+        console.log(commodity);  
+        var q = Number(document.getElementById("enterQuantities").value);
+        console.log(q);
 
-
+              if(commodity === "Samsung Galaxy"){
+                console.log(q);
+                productDetails[0].Quantity += q;
+              }
+                  if(commodity== "Nokia S730"){
+                productDetails[1].Quantity += q;
+              }
+                  if(commodity== "Xiaomi Note"){
+                productDetails[2].Quantity += q;
+              }
+                  if(commodity== "Motoroala G10"){
+                productDetails[3].Quantity += q;
+              }
+                  if(commodity== "Apple S12"){
+                productDetails[4].Quantity += q;
+              }
               
+              for(var i=0;i<productDetails.length;i++){
+                var row = myTable9.insertRow();
+                
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = productDetails[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = productDetails[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = productDetails[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = productDetails[i].Price;
+                    var cell5 = row.insertCell(4);
+                    cell5.innerHTML = productDetails[i].Quantity;
+                    
+            }
+	}     
+
+        function evaluateBill(){
+        var total=0;
+        for(var i=0;i<productDetails.length;i++){
+        total += productDetails[i].Quantity*productDetails[i].Price;
+        }
+        var row = myTable9.insertRow();
+        var temp = row.insertCell(0);
+        temp.innerHTML = "Total";
+        var temp1 = row.insertCell(1);
+        temp1.innerHTML = total;
+                        
+              
+        }
+       //task-8 update quantity
+        function upQuan(){
+        
+        var Table = document.getElementById("myTable10");
+        Table.innerHTML = "";
+        var model = (document.getElementById("cprod").value);
+        console.log(model);
+        var upQ = (document.getElementById("giveQuantity").value);
+        console.log(upQ);
+           
+        
+             if(model === "Samsung Galaxy"){
+               
+                productDetails[0].Quantity = upQ;
+              }
+                  if(model== "Nokia S730"){
+                productDetails[1].Quantity = upQ;
+              }
+                  if(model== "Xiaomi Note"){
+                productDetails[2].Quantity = upQ;
+              }
+                  if(model== "Motoroala G10"){
+                productDetails[3].Quantity = upQ;
+              }
+                  if(model== "Apple S12"){
+                productDetails[4].Quantity = upQ;
+              }
+              
+              for(var i=0;i<productDetails.length;i++){
+                var row = myTable10.insertRow();
+                
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = productDetails[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = productDetails[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = productDetails[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = productDetails[i].Price;
+                    var cell5 = row.insertCell(4);
+                    cell5.innerHTML = productDetails[i].Quantity;
+                    
+            }
+        }
+        //task-9
+        function giveRate(){ 
+        
+
+        var Table = document.getElementById("myTable11");
+        Table.innerHTML = "";
+        var obj = (document.getElementById("sprod").value);
+        var r = (document.getElementById("points").value);
+                
+                if(obj === "Samsung Galaxy"){
+                 productRating[0].Rating = r;
+                }
+                if(obj== "Nokia S730"){
+                  productRating[1].Rating = r;
+                }
+                 if(obj== "Xiaomi Note"){
+                 productRating[2].Rating = r;
+                }
+                 if(obj== "Motoroala G10"){
+                productRating[3].Rating = r;
+                }
+                 if(obj== "Apple S12"){
+                  productRating[4].Rating = r;
+                }
+                
+              for(var i=0;i<productRating.length;i++){
+                
+                var row = myTable11.insertRow();
+                    var cell1 = row.insertCell(0);
+                    cell1.innerHTML = productRating[i].Company;
+                    var cell2 = row.insertCell(1);
+                    cell2.innerHTML = productRating[i].Model;
+                    var cell3 = row.insertCell(2);
+                    cell3.innerHTML = productRating[i].Memory;
+                    var cell4 = row.insertCell(3);
+                    cell4.innerHTML = productRating[i].Price;
+                    var cell5 = row.insertCell(4);
+                    cell5.innerHTML = productRating[i].Rating;
+                    
+            }
+        }
+
+
+        //task-10
+        function filterSearch(){
+                var Table = (document.getElementById("myTable12"));
+                Table.innerHTML = "";
+                var temp3 = Number(document.getElementById("minp").value);
+
+                var temp4 = Number(document.getElementById("mxnp").value);
+
+
+                console.log(temp3);
+                console.log(temp4);
+                for (var i=0;i<productDetails.length;i++){
+
+                     if(productDetails[i].Price>=temp3 && productDetails[i].Price<=temp4){
+                
+                                var row = myTable12.insertRow();
+                                
+                                    var cell1 = row.insertCell(0);
+                                    cell1.innerHTML = productDetails[i].Company;
+                                    var cell2 = row.insertCell(1);
+                                    cell2.innerHTML = productDetails[i].Model;
+                                    var cell3 = row.insertCell(2);
+                                    cell3.innerHTML = productDetails[i].Memory;
+                                    var cell4 = row.insertCell(3);
+                                    cell4.innerHTML = productDetails[i].Price;
+                                    
+                                    
+                            }      
+                     }
+                     
+                }
+        
+
+
+
+        
+
+
